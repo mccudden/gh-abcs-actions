@@ -25,4 +25,4 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Adding markdown
         run: |
-          echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "### Hello world! :rocket:" >> "$GITHUB_STEP_SUMMARY"
