@@ -7,7 +7,7 @@ on:
       - main
     paths:
       - 'labs/**'
-      
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -24,4 +24,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Adding markdown
-        run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+        run: |
+          echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
